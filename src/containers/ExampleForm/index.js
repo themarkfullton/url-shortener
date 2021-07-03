@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import InputField from '../../components/inputField';
 import formStyles from "./form.module.css";
 
-const ExampleForm = (props) => {
-    // const [currForm, setCurrForm] = useState({ fName: "", lName: "", email: ""});
 
+// You'll notice that ExampleForm exclusively uses props.
+// Since we passed in the setCurrValues, we're able to set the values of currValue from here.
+const ExampleForm = (props) => {
+    // This function is actually passed into the InputField component. It runs every time the value of the InputField is changed
+    // You'll notice we're taking the id and value. This is because the id of the InputField component is set to the key of 
+    // currValue. This way we don't have to make a handleInputChange for each InputField.
     const handleInputChange = (e) => {
-        //alert(e.target.id); returns id of field changed 
-        //alert(e.target.value); returns current value
         let { id, value } = e.target;
 
+        // We use the id of the InputField to determine the key we want to change the value of.
         props.setCurrValues(prevState => ({
             ...prevState,
             [id]: value
@@ -17,7 +20,8 @@ const ExampleForm = (props) => {
     }
 
     
-
+    // You'll notice that (despite the name), we're not actually using a form tag. This is because the onClick will call handleSubmit,
+    //  which uses the currValue which is already in the Splash component.
     return(
         <div className={formStyles.container}>
             <div className={formStyles.form}>
