@@ -1,0 +1,37 @@
+.container {
+    width: 80vw;
+    background-color: #B3BFB8;
+    border-radius: 50px;
+    padding: 5vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vw; 
+    margin-bottom: 10vw;
+}
+
+.btn {
+    border: none;
+    background-color: #B3BFB8;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #3C493F;
+    transition-duration: .25s;
+}
+
+.btn:hover{
+    transition-duration: .25s;
+    color: #B3BFB8;
+}
+
+@media only screen and (max-width: 823px) {
+    .form {
+        align-items: center;
+        flex-direction: column;
+    }
+}

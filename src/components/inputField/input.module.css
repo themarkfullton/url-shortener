@@ -1,0 +1,25 @@
+.container {
+    width: 25vw;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.label {
+    font-weight: bolder;
+    color: #7E8D85;
+}
+
+.input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F0F7F4;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 823px) {
+    .container {
+        width: 80%;
+    }
+}

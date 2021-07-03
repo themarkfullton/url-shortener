@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Work+Sans&display=swap');
+
+body {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #3C493F;
+}
+
+h1, h2, h3 {
+    font-family: 'Paytone One', sans-serif;
+    color: #A2E3C4;
+}
+
+.App {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20vw;
+    text-align: center;
+}

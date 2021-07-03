@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import InputField from '../../components/inputField';
+import formStyles from "./form.module.css";
 
 const ExampleForm = (props) => {
     // const [currForm, setCurrForm] = useState({ fName: "", lName: "", email: ""});
@@ -18,11 +19,13 @@ const ExampleForm = (props) => {
     
 
     return(
-        <div>
-            <InputField idName="fName" displayName="First Name:" handleInputChange={handleInputChange} />
-            <InputField idName="lName" displayName="Last Name:" handleInputChange={handleInputChange} />
-            <InputField idName="email" displayName="Email:" handleInputChange={handleInputChange} />
-            <button onClick={props.handleSubmit}>Submit</button>
+        <div className={formStyles.container}>
+            <div className={formStyles.form}>
+                <InputField idName="fName" displayName="First Name:" handleInputChange={handleInputChange} />
+                <InputField idName="lName" displayName="Last Name:" handleInputChange={handleInputChange} />
+                <InputField idName="somethingElse" displayName="Something Else Probably:" handleInputChange={handleInputChange} />
+            </div>
+            <button className={formStyles.btn} onClick={props.handleSubmit}>Submit</button>
         </div>
     )
 }

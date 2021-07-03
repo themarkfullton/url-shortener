@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ExampleForm from '../ExampleForm';
 
 const Splash = () => {
-    const [currValues, setCurrValues] = useState({ fName: "", lName: "", email: ""});
+    const [currValues, setCurrValues] = useState({ fName: "", lName: "", somethingElse: ""});
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     const handleSubmit = () => {
@@ -18,7 +18,7 @@ const Splash = () => {
         </div>
     ) : (
         <div>
-            <h1>Splash Page</h1>
+            <h1>Example Form</h1>
             <ExampleForm setCurrValues={setCurrValues} handleSubmit={handleSubmit} />
         </div>
     )
