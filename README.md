@@ -1,5 +1,7 @@
 # React Form Submit Example
 
+**Link to Live:** https://themarkfullton.github.io/react-form-submit/
+
 If we want to use values in a component that are entered in another, we can utilize hooks and props.
 
 In this example, we're storing and displaying the values in the Splash component, but retrieving them from the user in the Form component--which, itself, retrieves information from InputFields.
