@@ -1,4 +1,4 @@
-import Splash from 'containers/Splash';
+import Splash from './containers/Splash';
 
 function App() {
   return (
