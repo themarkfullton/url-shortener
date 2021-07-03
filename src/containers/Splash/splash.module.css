@@ -1,0 +1,11 @@
+.container {
+    width: 80vw;
+    background-color: #B3BFB8;
+    border-radius: 50px;
+    padding: 5vw;
+}
+
+.bold {
+    font-weight: bolder;
+    color: #3C493F;
+}
